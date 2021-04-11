@@ -17,7 +17,7 @@ docker run --rm -i chrome-print http://www.roswellpark.org/ > file.pdf
 ```
 
 PHP:
-```
+```php
 $pipes = [];
 $command = 'docker run --rm -i chrome-print';
 $descriptor_spec = [
