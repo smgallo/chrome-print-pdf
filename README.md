@@ -43,4 +43,5 @@ print 'Docker output:' . PHP_EOL . $stderr;
 Work based on:
 - [femtopixel/docker-google-chrome-headless](https://github.com/femtopixel/docker-google-chrome-headless)
 - [Chromium command line switches](https://peter.sh/experiments/chromium-command-line-switches/)
+- [Ben Plessinger's awesome work on XDMoD](https://github.com/ubccr/xdmod/blob/xdmod9.5/libraries/charting.php)
 
