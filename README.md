@@ -1,25 +1,25 @@
 # Generate PDF from HTML Using Headless Google Chrome
 
 ```
-docker build -t chrome-print .
+docker build -t chrome-print-pdf .
 ```
 
 Create a PDF from a URL or an HTML file. Note that when running the container we do not specify the `-t` flag. 
 
 PDF from HTML file:
 ```
-cat file.html | docker run --rm -i chrome-print > file.pdf
+cat file.html | docker run --rm -i chrome-print-pdf > file.pdf
 ```
 
 PDF from URL:
 ```
-docker run --rm -i chrome-print http://www.roswellpark.org/ > file.pdf
+docker run --rm -i chrome-print-pdf http://www.roswellpark.org/ > file.pdf
 ```
 
 PHP:
 ```php
 $pipes = [];
-$command = 'docker run --rm -i chrome-print';
+$command = 'docker run --rm -i chrome-print-pdf';
 $descriptor_spec = [
     0 => [ 'pipe', 'r' ],
     1 => [ 'pipe', 'w' ],
