@@ -1,5 +1,7 @@
 # Generate PDF from HTML Using Headless Google Chrome
 
+Generate PDFs without needing to mount local directories.
+
 ```
 docker build -t chrome-print-pdf .
 ```
